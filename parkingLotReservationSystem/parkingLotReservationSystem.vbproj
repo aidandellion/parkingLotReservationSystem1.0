@@ -80,10 +80,53 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfile.Designer.vb">
+      <DependentUpon>frmProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.vb">
+      <DependentUpon>frmRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationAdmin.Designer.vb">
+      <DependentUpon>frmReservationAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationUser.Designer.vb">
+      <DependentUpon>frmReservationUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserList.Designer.vb">
+      <DependentUpon>frmUserList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVehicleRecords.Designer.vb">
+      <DependentUpon>frmVehicleRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehicleRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,6 +142,27 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfile.resx">
+      <DependentUpon>frmProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationAdmin.resx">
+      <DependentUpon>frmReservationAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationUser.resx">
+      <DependentUpon>frmReservationUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserList.resx">
+      <DependentUpon>frmUserList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehicleRecords.resx">
+      <DependentUpon>frmVehicleRecords.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -118,6 +182,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
