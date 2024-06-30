@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmReservationAdmin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmReservationAdmin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmReservationAdmin))
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -29,7 +29,6 @@ Partial Class frmReservationAdmin
         Me.btnLogOut = New System.Windows.Forms.Button()
         Me.btnReservation = New System.Windows.Forms.Button()
         Me.btnAdmin = New System.Windows.Forms.Button()
-        Me.cmbParkingLotCode = New System.Windows.Forms.ComboBox()
         Me.Panel25 = New System.Windows.Forms.Panel()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
@@ -80,9 +79,11 @@ Partial Class frmReservationAdmin
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnUpdate = New System.Windows.Forms.Button()
-        Me.cmbStatus = New System.Windows.Forms.ComboBox()
+        Me.btnUpdateStatus = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.DataSet1 = New parkingLotReservationSystem.DataSet1()
+        Me.cmbStatus = New System.Windows.Forms.ComboBox()
+        Me.cmbParkingLotCode = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.Panel13.SuspendLayout()
@@ -108,6 +109,7 @@ Partial Class frmReservationAdmin
         Me.Panel14.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -122,7 +124,7 @@ Partial Class frmReservationAdmin
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 596)
+        Me.Panel1.Size = New System.Drawing.Size(200, 687)
         Me.Panel1.TabIndex = 44
         '
         'btnUsers
@@ -153,7 +155,7 @@ Partial Class frmReservationAdmin
         '
         Me.btnLogOut.BackColor = System.Drawing.Color.Silver
         Me.btnLogOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogOut.Location = New System.Drawing.Point(0, 531)
+        Me.btnLogOut.Location = New System.Drawing.Point(0, 623)
         Me.btnLogOut.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnLogOut.Name = "btnLogOut"
         Me.btnLogOut.Size = New System.Drawing.Size(200, 65)
@@ -185,14 +187,6 @@ Partial Class frmReservationAdmin
         Me.btnAdmin.TabIndex = 0
         Me.btnAdmin.Text = "ADMIN"
         Me.btnAdmin.UseVisualStyleBackColor = False
-        '
-        'cmbParkingLotCode
-        '
-        Me.cmbParkingLotCode.FormattingEnabled = True
-        Me.cmbParkingLotCode.Location = New System.Drawing.Point(621, 475)
-        Me.cmbParkingLotCode.Name = "cmbParkingLotCode"
-        Me.cmbParkingLotCode.Size = New System.Drawing.Size(121, 28)
-        Me.cmbParkingLotCode.TabIndex = 107
         '
         'Panel25
         '
@@ -670,24 +664,16 @@ Partial Class frmReservationAdmin
         Me.Label1.TabIndex = 74
         Me.Label1.Text = "Parking Lot Bangunan Sarjana"
         '
-        'btnUpdate
+        'btnUpdateStatus
         '
-        Me.btnUpdate.BackColor = System.Drawing.Color.Coral
-        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUpdate.Location = New System.Drawing.Point(800, 518)
-        Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(80, 36)
-        Me.btnUpdate.TabIndex = 76
-        Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = False
-        '
-        'cmbStatus
-        '
-        Me.cmbStatus.FormattingEnabled = True
-        Me.cmbStatus.Location = New System.Drawing.Point(621, 521)
-        Me.cmbStatus.Name = "cmbStatus"
-        Me.cmbStatus.Size = New System.Drawing.Size(121, 28)
-        Me.cmbStatus.TabIndex = 109
+        Me.btnUpdateStatus.BackColor = System.Drawing.Color.Coral
+        Me.btnUpdateStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdateStatus.Location = New System.Drawing.Point(800, 518)
+        Me.btnUpdateStatus.Name = "btnUpdateStatus"
+        Me.btnUpdateStatus.Size = New System.Drawing.Size(80, 36)
+        Me.btnUpdateStatus.TabIndex = 76
+        Me.btnUpdateStatus.Text = "Update"
+        Me.btnUpdateStatus.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -699,14 +685,35 @@ Partial Class frmReservationAdmin
         Me.Label4.TabIndex = 108
         Me.Label4.Text = "Status"
         '
+        'DataSet1
+        '
+        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'cmbStatus
+        '
+        Me.cmbStatus.FormattingEnabled = True
+        Me.cmbStatus.Location = New System.Drawing.Point(621, 525)
+        Me.cmbStatus.Name = "cmbStatus"
+        Me.cmbStatus.Size = New System.Drawing.Size(121, 28)
+        Me.cmbStatus.TabIndex = 111
+        '
+        'cmbParkingLotCode
+        '
+        Me.cmbParkingLotCode.FormattingEnabled = True
+        Me.cmbParkingLotCode.Location = New System.Drawing.Point(621, 475)
+        Me.cmbParkingLotCode.Name = "cmbParkingLotCode"
+        Me.cmbParkingLotCode.Size = New System.Drawing.Size(121, 28)
+        Me.cmbParkingLotCode.TabIndex = 112
+        '
         'frmReservationAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1102, 596)
+        Me.ClientSize = New System.Drawing.Size(1102, 687)
+        Me.Controls.Add(Me.cmbParkingLotCode)
         Me.Controls.Add(Me.cmbStatus)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.cmbParkingLotCode)
         Me.Controls.Add(Me.Panel25)
         Me.Controls.Add(Me.Panel13)
         Me.Controls.Add(Me.Panel21)
@@ -731,7 +738,7 @@ Partial Class frmReservationAdmin
         Me.Controls.Add(Me.Panel14)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.btnUpdate)
+        Me.Controls.Add(Me.btnUpdateStatus)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
@@ -787,6 +794,7 @@ Partial Class frmReservationAdmin
         Me.Panel3.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -798,7 +806,6 @@ Partial Class frmReservationAdmin
     Friend WithEvents btnLogOut As Button
     Friend WithEvents btnReservation As Button
     Friend WithEvents btnAdmin As Button
-    Friend WithEvents cmbParkingLotCode As ComboBox
     Friend WithEvents Panel25 As Panel
     Friend WithEvents Label17 As Label
     Friend WithEvents Panel13 As Panel
@@ -849,7 +856,9 @@ Partial Class frmReservationAdmin
     Friend WithEvents Label5 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnUpdate As Button
-    Friend WithEvents cmbStatus As ComboBox
+    Friend WithEvents btnUpdateStatus As Button
     Friend WithEvents Label4 As Label
+    Friend WithEvents DataSet1 As DataSet1
+    Friend WithEvents cmbStatus As ComboBox
+    Friend WithEvents cmbParkingLotCode As ComboBox
 End Class
