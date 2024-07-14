@@ -73,6 +73,7 @@ Partial Class frmLogin
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(293, 26)
         Me.txtPassword.TabIndex = 22
+        Me.txtPassword.UseSystemPasswordChar = True
         '
         'txtICNumber
         '

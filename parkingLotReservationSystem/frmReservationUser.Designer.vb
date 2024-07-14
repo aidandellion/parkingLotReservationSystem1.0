@@ -39,53 +39,53 @@ Partial Class frmReservationUser
         Me.Label7 = New System.Windows.Forms.Label()
         Me.cmbParkingLotCode = New System.Windows.Forms.ComboBox()
         Me.Panel25 = New System.Windows.Forms.Panel()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.lblParkingCode24 = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.lblParkingCode12 = New System.Windows.Forms.Label()
         Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.lblParkingCode20 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.lblParkingCode8 = New System.Windows.Forms.Label()
         Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.Label19 = New System.Windows.Forms.Label()
+        Me.lblParkingCode23 = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.lblParkingCode11 = New System.Windows.Forms.Label()
         Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.Label20 = New System.Windows.Forms.Label()
+        Me.lblParkingCode19 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblParkingCode7 = New System.Windows.Forms.Label()
         Me.Panel23 = New System.Windows.Forms.Panel()
-        Me.Label21 = New System.Windows.Forms.Label()
+        Me.lblParkingCode22 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Label15 = New System.Windows.Forms.Label()
+        Me.lblParkingCode10 = New System.Windows.Forms.Label()
         Me.Panel22 = New System.Windows.Forms.Panel()
-        Me.Label22 = New System.Windows.Forms.Label()
+        Me.lblParkingCode21 = New System.Windows.Forms.Label()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.lblParkingCode9 = New System.Windows.Forms.Label()
         Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.Label23 = New System.Windows.Forms.Label()
+        Me.lblParkingCode16 = New System.Windows.Forms.Label()
         Me.Panel19 = New System.Windows.Forms.Panel()
-        Me.Label24 = New System.Windows.Forms.Label()
+        Me.lblParkingCode18 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblParkingCode4 = New System.Windows.Forms.Label()
         Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.Label25 = New System.Windows.Forms.Label()
+        Me.lblParkingCode15 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.lblParkingCode6 = New System.Windows.Forms.Label()
         Me.Panel18 = New System.Windows.Forms.Panel()
-        Me.Label26 = New System.Windows.Forms.Label()
+        Me.lblParkingCode17 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblParkingCode3 = New System.Windows.Forms.Label()
         Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Label27 = New System.Windows.Forms.Label()
+        Me.lblParkingCode14 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lblParkingCode5 = New System.Windows.Forms.Label()
         Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.Label28 = New System.Windows.Forms.Label()
+        Me.lblParkingCode13 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblParkingCode2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblParkingCode1 = New System.Windows.Forms.Label()
         Me.DataSet1 = New parkingLotReservationSystem.DataSet1()
         Me.ParkinglotBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Panel1.SuspendLayout()
@@ -271,457 +271,481 @@ Partial Class frmReservationUser
         '
         Me.Panel25.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel25.Controls.Add(Me.Label17)
+        Me.Panel25.Controls.Add(Me.lblParkingCode24)
         Me.Panel25.Location = New System.Drawing.Point(915, 284)
         Me.Panel25.Name = "Panel25"
         Me.Panel25.Size = New System.Drawing.Size(55, 70)
         Me.Panel25.TabIndex = 130
         '
-        'Label17
+        'lblParkingCode24
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(3, 28)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(49, 20)
-        Me.Label17.TabIndex = 50
-        Me.Label17.Text = "BS24"
+        Me.lblParkingCode24.AutoSize = True
+        Me.lblParkingCode24.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode24.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode24.Name = "lblParkingCode24"
+        Me.lblParkingCode24.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode24.TabIndex = 50
+        Me.lblParkingCode24.Text = "BS24"
         '
         'Panel13
         '
         Me.Panel13.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel13.Controls.Add(Me.Label13)
+        Me.Panel13.Controls.Add(Me.lblParkingCode12)
         Me.Panel13.Location = New System.Drawing.Point(915, 158)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(55, 70)
         Me.Panel13.TabIndex = 118
         '
-        'Label13
+        'lblParkingCode12
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(3, 28)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(49, 20)
-        Me.Label13.TabIndex = 50
-        Me.Label13.Text = "BS12"
+        Me.lblParkingCode12.AutoSize = True
+        Me.lblParkingCode12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode12.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode12.Name = "lblParkingCode12"
+        Me.lblParkingCode12.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode12.TabIndex = 50
+        Me.lblParkingCode12.Text = "BS12"
         '
         'Panel21
         '
         Me.Panel21.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel21.Controls.Add(Me.Label18)
+        Me.Panel21.Controls.Add(Me.lblParkingCode20)
         Me.Panel21.Location = New System.Drawing.Point(699, 284)
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(55, 70)
         Me.Panel21.TabIndex = 126
         '
-        'Label18
+        'lblParkingCode20
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(3, 28)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(49, 20)
-        Me.Label18.TabIndex = 50
-        Me.Label18.Text = "BS20"
+        Me.lblParkingCode20.AutoSize = True
+        Me.lblParkingCode20.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode20.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode20.Name = "lblParkingCode20"
+        Me.lblParkingCode20.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode20.TabIndex = 50
+        Me.lblParkingCode20.Text = "BS20"
         '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel9.Controls.Add(Me.Label9)
+        Me.Panel9.Controls.Add(Me.lblParkingCode8)
         Me.Panel9.Location = New System.Drawing.Point(699, 158)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(55, 70)
         Me.Panel9.TabIndex = 114
         '
-        'Label9
+        'lblParkingCode8
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(3, 28)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(49, 20)
-        Me.Label9.TabIndex = 50
-        Me.Label9.Text = "BS08"
+        Me.lblParkingCode8.AutoSize = True
+        Me.lblParkingCode8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode8.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode8.Name = "lblParkingCode8"
+        Me.lblParkingCode8.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode8.TabIndex = 50
+        Me.lblParkingCode8.Text = "BS08"
         '
         'Panel24
         '
         Me.Panel24.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel24.Controls.Add(Me.Label19)
+        Me.Panel24.Controls.Add(Me.lblParkingCode23)
         Me.Panel24.Location = New System.Drawing.Point(861, 284)
         Me.Panel24.Name = "Panel24"
         Me.Panel24.Size = New System.Drawing.Size(55, 70)
         Me.Panel24.TabIndex = 129
         '
-        'Label19
+        'lblParkingCode23
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(3, 28)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(49, 20)
-        Me.Label19.TabIndex = 50
-        Me.Label19.Text = "BS23"
+        Me.lblParkingCode23.AutoSize = True
+        Me.lblParkingCode23.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode23.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode23.Name = "lblParkingCode23"
+        Me.lblParkingCode23.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode23.TabIndex = 50
+        Me.lblParkingCode23.Text = "BS23"
         '
         'Panel12
         '
         Me.Panel12.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel12.Controls.Add(Me.Label14)
+        Me.Panel12.Controls.Add(Me.lblParkingCode11)
         Me.Panel12.Location = New System.Drawing.Point(861, 158)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(55, 70)
         Me.Panel12.TabIndex = 117
         '
-        'Label14
+        'lblParkingCode11
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(3, 28)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(49, 20)
-        Me.Label14.TabIndex = 50
-        Me.Label14.Text = "BS11"
+        Me.lblParkingCode11.AutoSize = True
+        Me.lblParkingCode11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode11.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode11.Name = "lblParkingCode11"
+        Me.lblParkingCode11.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode11.TabIndex = 50
+        Me.lblParkingCode11.Text = "BS11"
         '
         'Panel20
         '
         Me.Panel20.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel20.Controls.Add(Me.Label20)
+        Me.Panel20.Controls.Add(Me.lblParkingCode19)
         Me.Panel20.Location = New System.Drawing.Point(645, 284)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(55, 70)
         Me.Panel20.TabIndex = 125
         '
-        'Label20
+        'lblParkingCode19
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(3, 28)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(49, 20)
-        Me.Label20.TabIndex = 50
-        Me.Label20.Text = "BS19"
+        Me.lblParkingCode19.AutoSize = True
+        Me.lblParkingCode19.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode19.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode19.Name = "lblParkingCode19"
+        Me.lblParkingCode19.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode19.TabIndex = 50
+        Me.lblParkingCode19.Text = "BS19"
         '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel8.Controls.Add(Me.Label10)
+        Me.Panel8.Controls.Add(Me.lblParkingCode7)
         Me.Panel8.Location = New System.Drawing.Point(645, 158)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(55, 70)
         Me.Panel8.TabIndex = 113
         '
-        'Label10
+        'lblParkingCode7
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 28)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(49, 20)
-        Me.Label10.TabIndex = 50
-        Me.Label10.Text = "BS07"
+        Me.lblParkingCode7.AutoSize = True
+        Me.lblParkingCode7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode7.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode7.Name = "lblParkingCode7"
+        Me.lblParkingCode7.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode7.TabIndex = 50
+        Me.lblParkingCode7.Text = "BS07"
         '
         'Panel23
         '
         Me.Panel23.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel23.Controls.Add(Me.Label21)
+        Me.Panel23.Controls.Add(Me.lblParkingCode22)
         Me.Panel23.Location = New System.Drawing.Point(807, 284)
         Me.Panel23.Name = "Panel23"
         Me.Panel23.Size = New System.Drawing.Size(55, 70)
         Me.Panel23.TabIndex = 128
         '
-        'Label21
+        'lblParkingCode22
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(3, 28)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(49, 20)
-        Me.Label21.TabIndex = 50
-        Me.Label21.Text = "BS22"
+        Me.lblParkingCode22.AutoSize = True
+        Me.lblParkingCode22.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode22.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode22.Name = "lblParkingCode22"
+        Me.lblParkingCode22.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode22.TabIndex = 50
+        Me.lblParkingCode22.Text = "BS22"
         '
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel11.Controls.Add(Me.Label15)
+        Me.Panel11.Controls.Add(Me.lblParkingCode10)
         Me.Panel11.Location = New System.Drawing.Point(807, 158)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(55, 70)
         Me.Panel11.TabIndex = 116
         '
-        'Label15
+        'lblParkingCode10
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(3, 28)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(49, 20)
-        Me.Label15.TabIndex = 50
-        Me.Label15.Text = "BS10"
+        Me.lblParkingCode10.AutoSize = True
+        Me.lblParkingCode10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode10.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode10.Name = "lblParkingCode10"
+        Me.lblParkingCode10.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode10.TabIndex = 50
+        Me.lblParkingCode10.Text = "BS10"
         '
         'Panel22
         '
         Me.Panel22.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel22.Controls.Add(Me.Label22)
+        Me.Panel22.Controls.Add(Me.lblParkingCode21)
         Me.Panel22.Location = New System.Drawing.Point(753, 284)
         Me.Panel22.Name = "Panel22"
         Me.Panel22.Size = New System.Drawing.Size(55, 70)
         Me.Panel22.TabIndex = 127
         '
-        'Label22
+        'lblParkingCode21
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(3, 28)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(49, 20)
-        Me.Label22.TabIndex = 50
-        Me.Label22.Text = "BS21"
+        Me.lblParkingCode21.AutoSize = True
+        Me.lblParkingCode21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode21.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode21.Name = "lblParkingCode21"
+        Me.lblParkingCode21.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode21.TabIndex = 50
+        Me.lblParkingCode21.Text = "BS21"
         '
         'Panel10
         '
         Me.Panel10.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel10.Controls.Add(Me.Label16)
+        Me.Panel10.Controls.Add(Me.lblParkingCode9)
         Me.Panel10.Location = New System.Drawing.Point(753, 158)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(55, 70)
         Me.Panel10.TabIndex = 115
         '
-        'Label16
+        'lblParkingCode9
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(3, 28)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(49, 20)
-        Me.Label16.TabIndex = 50
-        Me.Label16.Text = "BS09"
+        Me.lblParkingCode9.AutoSize = True
+        Me.lblParkingCode9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode9.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode9.Name = "lblParkingCode9"
+        Me.lblParkingCode9.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode9.TabIndex = 50
+        Me.lblParkingCode9.Text = "BS09"
         '
         'Panel17
         '
         Me.Panel17.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel17.Controls.Add(Me.Label23)
+        Me.Panel17.Controls.Add(Me.lblParkingCode16)
         Me.Panel17.Location = New System.Drawing.Point(483, 284)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(55, 70)
         Me.Panel17.TabIndex = 122
         '
-        'Label23
+        'lblParkingCode16
         '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(3, 28)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(49, 20)
-        Me.Label23.TabIndex = 50
-        Me.Label23.Text = "BS16"
+        Me.lblParkingCode16.AutoSize = True
+        Me.lblParkingCode16.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode16.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode16.Name = "lblParkingCode16"
+        Me.lblParkingCode16.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode16.TabIndex = 50
+        Me.lblParkingCode16.Text = "BS16"
         '
         'Panel19
         '
         Me.Panel19.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel19.Controls.Add(Me.Label24)
+        Me.Panel19.Controls.Add(Me.lblParkingCode18)
         Me.Panel19.Location = New System.Drawing.Point(591, 284)
         Me.Panel19.Name = "Panel19"
         Me.Panel19.Size = New System.Drawing.Size(55, 70)
         Me.Panel19.TabIndex = 124
         '
-        'Label24
+        'lblParkingCode18
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(3, 28)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(49, 20)
-        Me.Label24.TabIndex = 50
-        Me.Label24.Text = "BS18"
+        Me.lblParkingCode18.AutoSize = True
+        Me.lblParkingCode18.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode18.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode18.Name = "lblParkingCode18"
+        Me.lblParkingCode18.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode18.TabIndex = 50
+        Me.lblParkingCode18.Text = "BS18"
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel5.Controls.Add(Me.Label6)
+        Me.Panel5.Controls.Add(Me.lblParkingCode4)
         Me.Panel5.Location = New System.Drawing.Point(483, 158)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(55, 70)
         Me.Panel5.TabIndex = 110
         '
-        'Label6
+        'lblParkingCode4
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(3, 28)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(49, 20)
-        Me.Label6.TabIndex = 50
-        Me.Label6.Text = "BS04"
+        Me.lblParkingCode4.AutoSize = True
+        Me.lblParkingCode4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode4.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode4.Name = "lblParkingCode4"
+        Me.lblParkingCode4.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode4.TabIndex = 50
+        Me.lblParkingCode4.Text = "BS04"
         '
         'Panel16
         '
         Me.Panel16.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel16.Controls.Add(Me.Label25)
+        Me.Panel16.Controls.Add(Me.lblParkingCode15)
         Me.Panel16.Location = New System.Drawing.Point(429, 284)
         Me.Panel16.Name = "Panel16"
         Me.Panel16.Size = New System.Drawing.Size(55, 70)
         Me.Panel16.TabIndex = 121
         '
-        'Label25
+        'lblParkingCode15
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(3, 28)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(49, 20)
-        Me.Label25.TabIndex = 50
-        Me.Label25.Text = "BS15"
+        Me.lblParkingCode15.AutoSize = True
+        Me.lblParkingCode15.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode15.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode15.Name = "lblParkingCode15"
+        Me.lblParkingCode15.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode15.TabIndex = 50
+        Me.lblParkingCode15.Text = "BS15"
         '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel7.Controls.Add(Me.Label11)
+        Me.Panel7.Controls.Add(Me.lblParkingCode6)
         Me.Panel7.Location = New System.Drawing.Point(591, 158)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(55, 70)
         Me.Panel7.TabIndex = 112
         '
-        'Label11
+        'lblParkingCode6
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(3, 28)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 20)
-        Me.Label11.TabIndex = 50
-        Me.Label11.Text = "BS06"
+        Me.lblParkingCode6.AutoSize = True
+        Me.lblParkingCode6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode6.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode6.Name = "lblParkingCode6"
+        Me.lblParkingCode6.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode6.TabIndex = 50
+        Me.lblParkingCode6.Text = "BS06"
         '
         'Panel18
         '
         Me.Panel18.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel18.Controls.Add(Me.Label26)
+        Me.Panel18.Controls.Add(Me.lblParkingCode17)
         Me.Panel18.Location = New System.Drawing.Point(537, 284)
         Me.Panel18.Name = "Panel18"
         Me.Panel18.Size = New System.Drawing.Size(55, 70)
         Me.Panel18.TabIndex = 123
         '
-        'Label26
+        'lblParkingCode17
         '
-        Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(3, 28)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(49, 20)
-        Me.Label26.TabIndex = 50
-        Me.Label26.Text = "BS17"
+        Me.lblParkingCode17.AutoSize = True
+        Me.lblParkingCode17.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode17.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode17.Name = "lblParkingCode17"
+        Me.lblParkingCode17.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode17.TabIndex = 50
+        Me.lblParkingCode17.Text = "BS17"
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Controls.Add(Me.Label8)
+        Me.Panel4.Controls.Add(Me.lblParkingCode3)
         Me.Panel4.Location = New System.Drawing.Point(429, 158)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(55, 70)
         Me.Panel4.TabIndex = 109
         '
-        'Label8
+        'lblParkingCode3
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(3, 28)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(49, 20)
-        Me.Label8.TabIndex = 50
-        Me.Label8.Text = "BS03"
+        Me.lblParkingCode3.AutoSize = True
+        Me.lblParkingCode3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode3.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode3.Name = "lblParkingCode3"
+        Me.lblParkingCode3.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode3.TabIndex = 50
+        Me.lblParkingCode3.Text = "BS03"
         '
         'Panel15
         '
         Me.Panel15.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel15.Controls.Add(Me.Label27)
+        Me.Panel15.Controls.Add(Me.lblParkingCode14)
         Me.Panel15.Location = New System.Drawing.Point(375, 284)
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(55, 70)
         Me.Panel15.TabIndex = 120
         '
-        'Label27
+        'lblParkingCode14
         '
-        Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(3, 28)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(49, 20)
-        Me.Label27.TabIndex = 50
-        Me.Label27.Text = "BS14"
+        Me.lblParkingCode14.AutoSize = True
+        Me.lblParkingCode14.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode14.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode14.Name = "lblParkingCode14"
+        Me.lblParkingCode14.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode14.TabIndex = 50
+        Me.lblParkingCode14.Text = "BS14"
         '
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel6.Controls.Add(Me.Label12)
+        Me.Panel6.Controls.Add(Me.lblParkingCode5)
         Me.Panel6.Location = New System.Drawing.Point(537, 158)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(55, 70)
         Me.Panel6.TabIndex = 111
         '
-        'Label12
+        'lblParkingCode5
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(3, 28)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(49, 20)
-        Me.Label12.TabIndex = 50
-        Me.Label12.Text = "BS05"
+        Me.lblParkingCode5.AutoSize = True
+        Me.lblParkingCode5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode5.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode5.Name = "lblParkingCode5"
+        Me.lblParkingCode5.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode5.TabIndex = 50
+        Me.lblParkingCode5.Text = "BS05"
         '
         'Panel14
         '
         Me.Panel14.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel14.Controls.Add(Me.Label28)
+        Me.Panel14.Controls.Add(Me.lblParkingCode13)
         Me.Panel14.Location = New System.Drawing.Point(321, 284)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(55, 70)
         Me.Panel14.TabIndex = 119
         '
-        'Label28
+        'lblParkingCode13
         '
-        Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(3, 28)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(49, 20)
-        Me.Label28.TabIndex = 50
-        Me.Label28.Text = "BS13"
+        Me.lblParkingCode13.AutoSize = True
+        Me.lblParkingCode13.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode13.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode13.Name = "lblParkingCode13"
+        Me.lblParkingCode13.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode13.TabIndex = 50
+        Me.lblParkingCode13.Text = "BS13"
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.lblParkingCode2)
         Me.Panel3.Location = New System.Drawing.Point(375, 158)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(55, 70)
         Me.Panel3.TabIndex = 108
         '
-        'Label3
+        'lblParkingCode2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(3, 28)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(49, 20)
-        Me.Label3.TabIndex = 50
-        Me.Label3.Text = "BS02"
+        Me.lblParkingCode2.AutoSize = True
+        Me.lblParkingCode2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode2.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode2.Name = "lblParkingCode2"
+        Me.lblParkingCode2.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode2.TabIndex = 50
+        Me.lblParkingCode2.Text = "BS02"
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.Label5)
+        Me.Panel2.Controls.Add(Me.lblParkingCode1)
         Me.Panel2.Location = New System.Drawing.Point(321, 158)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(55, 70)
         Me.Panel2.TabIndex = 107
         '
-        'Label5
+        'lblParkingCode1
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(3, 28)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(49, 20)
-        Me.Label5.TabIndex = 50
-        Me.Label5.Text = "BS01"
+        Me.lblParkingCode1.AutoSize = True
+        Me.lblParkingCode1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblParkingCode1.Location = New System.Drawing.Point(3, 28)
+        Me.lblParkingCode1.Name = "lblParkingCode1"
+        Me.lblParkingCode1.Size = New System.Drawing.Size(49, 20)
+        Me.lblParkingCode1.TabIndex = 50
+        Me.lblParkingCode1.Text = "BS01"
         '
         'DataSet1
         '
@@ -847,53 +871,53 @@ Partial Class frmReservationUser
     Friend WithEvents Label7 As Label
     Friend WithEvents cmbParkingLotCode As ComboBox
     Friend WithEvents Panel25 As Panel
-    Friend WithEvents Label17 As Label
+    Friend WithEvents lblParkingCode24 As Label
     Friend WithEvents Panel13 As Panel
-    Friend WithEvents Label13 As Label
+    Friend WithEvents lblParkingCode12 As Label
     Friend WithEvents Panel21 As Panel
-    Friend WithEvents Label18 As Label
+    Friend WithEvents lblParkingCode20 As Label
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents Label9 As Label
+    Friend WithEvents lblParkingCode8 As Label
     Friend WithEvents Panel24 As Panel
-    Friend WithEvents Label19 As Label
+    Friend WithEvents lblParkingCode23 As Label
     Friend WithEvents Panel12 As Panel
-    Friend WithEvents Label14 As Label
+    Friend WithEvents lblParkingCode11 As Label
     Friend WithEvents Panel20 As Panel
-    Friend WithEvents Label20 As Label
+    Friend WithEvents lblParkingCode19 As Label
     Friend WithEvents Panel8 As Panel
-    Friend WithEvents Label10 As Label
+    Friend WithEvents lblParkingCode7 As Label
     Friend WithEvents Panel23 As Panel
-    Friend WithEvents Label21 As Label
+    Friend WithEvents lblParkingCode22 As Label
     Friend WithEvents Panel11 As Panel
-    Friend WithEvents Label15 As Label
+    Friend WithEvents lblParkingCode10 As Label
     Friend WithEvents Panel22 As Panel
-    Friend WithEvents Label22 As Label
+    Friend WithEvents lblParkingCode21 As Label
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents Label16 As Label
+    Friend WithEvents lblParkingCode9 As Label
     Friend WithEvents Panel17 As Panel
-    Friend WithEvents Label23 As Label
+    Friend WithEvents lblParkingCode16 As Label
     Friend WithEvents Panel19 As Panel
-    Friend WithEvents Label24 As Label
+    Friend WithEvents lblParkingCode18 As Label
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Label6 As Label
+    Friend WithEvents lblParkingCode4 As Label
     Friend WithEvents Panel16 As Panel
-    Friend WithEvents Label25 As Label
+    Friend WithEvents lblParkingCode15 As Label
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label11 As Label
+    Friend WithEvents lblParkingCode6 As Label
     Friend WithEvents Panel18 As Panel
-    Friend WithEvents Label26 As Label
+    Friend WithEvents lblParkingCode17 As Label
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label8 As Label
+    Friend WithEvents lblParkingCode3 As Label
     Friend WithEvents Panel15 As Panel
-    Friend WithEvents Label27 As Label
+    Friend WithEvents lblParkingCode14 As Label
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lblParkingCode5 As Label
     Friend WithEvents Panel14 As Panel
-    Friend WithEvents Label28 As Label
+    Friend WithEvents lblParkingCode13 As Label
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblParkingCode2 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label5 As Label
+    Friend WithEvents lblParkingCode1 As Label
     Friend WithEvents DataSet1 As DataSet1
     Friend WithEvents ParkinglotBindingSource As BindingSource
 End Class

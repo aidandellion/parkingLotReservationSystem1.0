@@ -1,17 +1,21 @@
-﻿Imports System.Data.OleDb
-Imports System.Data.SqlClient
+﻿Imports System.Data.Odbc
+Module GlobalVariables
+    Public loggedInUserId As Integer = 0
+    Public receiptLocation As String = ""
+End Module
 
 Public Class frmLogin
+    ' Connection string for ODBC DSN
+    Private connectionString As String = "DSN=parkinglotreservationsystemdb;"
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles Me.Load
-        'frmRegister.Hide()
+        frmRegister.Hide()
     End Sub
+
     Private Sub lblRegister_Click(sender As Object, e As EventArgs) Handles lblRegister.Click
         Dim oForm As New frmRegister
         oForm.Show()
         Me.Hide()
     End Sub
-
-    Private connectionString As String = "Data Source=your_server;Initial Catalog=your_database;Integrated Security=True"
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         ' Get the input from the text boxes
@@ -23,45 +27,90 @@ Public Class frmLogin
             MessageBox.Show("Please enter both IC number and password.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
+        If LoginUser(icNumber, password) Then
+            Dim userType As Integer = CheckType(icNumber)
+            If userType = 1 Then
+                MessageBox.Show("Login successful! You are an admin.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                'ide the login form and show the admin form
+                Me.Hide()
+                Dim adminForm As New frmReservationAdmin()
+                adminForm.Show()
+            ElseIf userType = 2 Then
+                MessageBox.Show("Login successful! You are a user.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                GlobalVariables.loggedInUserId = getUserId(icNumber, password)
+                'ide the login form and show the user form
+                Me.Hide()
+                Dim userForm As New frmReservationUser()
+                userForm.Show()
+            Else
+                MessageBox.Show("Login failed. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Else
+            MessageBox.Show("Login failed. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
 
-        ' Connection string (update the path to your database file)
-        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\path\to\your\UserDatabase.accdb"
-
+    Private Function LoginUser(icNumber As String, password As String) As Boolean
         ' SQL query to check for matching user
-        Dim query As String = "SELECT COUNT(*) FROM Users WHERE ICNumber = ? AND Password = ?"
+        Dim query As String = "SELECT COUNT(*) FROM Users WHERE icNo = ? AND password = ?"
+        ' Create a connection and command
+        Using connection As New OdbcConnection(connectionString)
+            Using command As New OdbcCommand(query, connection)
+                ' Add parameters to the command in the correct order
+                command.Parameters.AddWithValue("?", icNumber)
+                command.Parameters.AddWithValue("?", password)
+                connection.Open()
+                Dim result As Object = command.ExecuteScalar()
+                connection.Close()
+                Return Convert.ToInt32(result) > 0
+            End Using
+        End Using
+    End Function
+    Private Function getUserId(icNumber As String, password As String) As Integer
+        ' SQL query to retrieve user ID based on IC number and password
+        Dim query As String = "SELECT userId FROM Users WHERE icNo = ? AND password = ?"
+
+        ' Variable to store userId
+        Dim userId As Integer = 0
 
         ' Create a connection and command
-        Using connection As New OleDbConnection(connectionString)
-            Using command As New OleDbCommand(query, connection)
-                ' Add parameters to the command
-                command.Parameters.AddWithValue("@ICNumber", icNumber)
-                command.Parameters.AddWithValue("@Password", password)
+        Using connection As New OdbcConnection(connectionString)
+            Using command As New OdbcCommand(query, connection)
+                ' Add parameters to the command in the correct order
+                command.Parameters.AddWithValue("@icNumber", icNumber)
+                command.Parameters.AddWithValue("@password", password)
 
                 Try
-                    ' Open the connection
                     connection.Open()
+                    ' Execute the query and retrieve the userId
+                    Dim result As Object = command.ExecuteScalar()
 
-                    ' Execute the query and get the result
-                    Dim result As Integer = Convert.ToInt32(command.ExecuteScalar())
-
-                    ' Check if a matching user was found
-                    If result > 0 Then
-                        MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        ' Hide the login form and show the main form
-                        Me.Hide()
-                        'Dim mainForm As New frmReservation()
-                        'mainForm.Show()
-                    Else
-                        MessageBox.Show("Invalid IC number or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    If result IsNot Nothing AndAlso Not DBNull.Value.Equals(result) Then
+                        userId = Convert.ToInt32(result)
                     End If
                 Catch ex As Exception
-                    MessageBox.Show("An error occurred: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show("Error retrieving user ID: " & ex.Message)
                 End Try
             End Using
         End Using
-    End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Return userId
+    End Function
 
-    End Sub
+
+    Private Function CheckType(icNumber As String) As Integer
+        ' SQL query to get user type
+        Dim query As String = "SELECT typeId FROM Users WHERE icNo = ?"
+        ' Create a connection and command
+        Using connection As New OdbcConnection(connectionString)
+            Using command As New OdbcCommand(query, connection)
+                ' Add parameters to the command
+                command.Parameters.AddWithValue("?", icNumber)
+                connection.Open()
+                Dim result As Object = command.ExecuteScalar()
+                connection.Close()
+                Return Convert.ToInt32(result)
+            End Using
+        End Using
+    End Function
 End Class

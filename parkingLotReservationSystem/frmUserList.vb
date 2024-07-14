@@ -1,13 +1,13 @@
-﻿Imports System.Data.SqlClient
+﻿Imports System.Data.Odbc
 
 Public Class frmUserList
-    ' Connection string to your database
-    Private connectionString As String = "Your_Connection_String_Here"
+    ' Connection string to your Access database
+    Private connectionString As String = "DSN=parkingLotReservationSystemDB"
 
     ' Create a DataTable to hold the user data
     Private userTable As DataTable
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmUserList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load user data from the database
         LoadUserData()
 
@@ -19,15 +19,15 @@ Public Class frmUserList
         userTable = New DataTable()
 
         ' Define your SQL query
-        Dim query As String = "SELECT OwnerName, VehicleNumber, ICNumber, PhoneNumber FROM Users"
+        Dim query As String = "SELECT fullName, vehicleNo, icNo, phoneNo FROM Users"
 
-        ' Use SqlConnection and SqlDataAdapter to fetch the data
-        'Using connection As New SqlConnection(connectionString)
-        '    Using adapter As New SqlDataAdapter(query, connection)
-        '        ' Fill the DataTable with the data
-        '        adapter.Fill(userTable)
-        '    End Using
-        'End Using
+        ' Use OdbcConnection and OdbcDataAdapter to fetch the data
+        Using connection As New OdbcConnection(connectionString)
+            Using adapter As New OdbcDataAdapter(query, connection)
+                ' Fill the DataTable with the data
+                adapter.Fill(userTable)
+            End Using
+        End Using
     End Sub
 
     Private Sub PopulateListBoxes(dt As DataTable)
@@ -37,29 +37,29 @@ Public Class frmUserList
         lstPhone.Items.Clear()
 
         For Each row As DataRow In dt.Rows
-            lstName.Items.Add(row("OwnerName"))
-            lstPlate.Items.Add(row("VehicleNumber"))
-            lstIC.Items.Add(row("ICNumber"))
-            lstPhone.Items.Add(row("PhoneNumber"))
+            lstName.Items.Add(row("fullName"))
+            lstPlate.Items.Add(row("vehicleNo"))
+            lstIC.Items.Add(row("icNo"))
+            lstPhone.Items.Add(row("phoneNo"))
         Next
     End Sub
 
-    Private Sub btnSearch_Click(sender As Object, e As EventArgs)
-        ' Filter the DataTable based on the search text
-        Dim filterText As String = txtSearch.Text.Trim().ToLower()
-        Dim filteredRows = userTable.AsEnumerable().Where(Function(row) row("OwnerName").ToString().ToLower().Contains(filterText) OrElse
-                                                           row("VehicleNumber").ToString().ToLower().Contains(filterText) OrElse
-                                                           row("ICNumber").ToString().ToLower().Contains(filterText) OrElse
-                                                           row("PhoneNumber").ToString().ToLower().Contains(filterText))
+    'Private Sub btnSearch_Click(sender As Object, e As EventArgs)
+    '    ' Filter the DataTable based on the search text
+    '    Dim filterText As String = txtSearch.Text.Trim().ToLower()
+    '    Dim filteredRows = userTable.AsEnumerable().Where(Function(row) row("fullName").ToString().ToLower().Contains(filterText) OrElse
+    '                                                       row("vehicleNo").ToString().ToLower().Contains(filterText) OrElse
+    '                                                       row("icNo").ToString().ToLower().Contains(filterText) OrElse
+    '                                                       row("phoneNo").ToString().ToLower().Contains(filterText))
 
-        Dim filteredTable As DataTable = userTable.Clone()
-        For Each row In filteredRows
-            filteredTable.ImportRow(row)
-        Next
+    '    Dim filteredTable As DataTable = userTable.Clone()
+    '    For Each row In filteredRows
+    '        filteredTable.ImportRow(row)
+    '    Next
 
-        ' Populate the ListBoxes with filtered data
-        PopulateListBoxes(filteredTable)
-    End Sub
+    '    ' Populate the ListBoxes with filtered data
+    '    PopulateListBoxes(filteredTable)
+    'End Sub
 
     Private Sub btnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdmin.Click
         ' Show admin section or perform actions related to admin
@@ -88,9 +88,13 @@ Public Class frmUserList
     End Sub
 
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
-        ' Perform log out action
-        Dim frm As New frmLogin() ' Assuming you have a login form
-        frm.Show()
-        Me.Close()
+        ' Confirm deletion
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to logout?", "Confirm Logout", MessageBoxButtons.YesNo)
+        If result = DialogResult.Yes Then
+            ' Perform log out action
+            Dim frm As New frmLogin() ' Assuming you have a login form
+            frm.Show()
+            Me.Close()
+        End If
     End Sub
 End Class
